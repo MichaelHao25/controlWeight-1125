@@ -1,0 +1,461 @@
+@import url(reset.css);
+
+@media(min-width:1300px){
+	.container{
+		width: 1200px;
+	}
+}
+
+body{
+	background: #f2f3ed;
+}
+.header{
+	background: #fdfbfc;
+	.h124{
+		font-size: 0;
+		height: 124px;
+		text-align: center;
+		i{
+			vertical-align: middle;
+			display: inline-block;
+			width: 0;
+			height: 100%;
+		}
+		.contact-us,
+		.brand{
+			display: inline-block;
+			vertical-align: middle;
+		}
+		.contact-us{
+			padding-left: 70px;
+			text-align: left;
+			font-size: 18px;
+			color: #f08200;
+			line-height: 2;
+			background:url(../img/hico2.png) left center no-repeat;
+			text-transform: uppercase;
+		}
+	}
+	.nav{
+		text-align: center;
+		background: #f08910;
+		font-size: 0;
+		a{
+			display: inline-block;
+			font-size: 16px;
+			color: #fff;
+			line-height: 46px;
+			margin: 0 35px;
+			@media(max-width:768px)			{
+				width: 50%;
+				margin: 0;
+			}
+		}
+	}
+}
+
+.main{
+	.banner{
+		height: 533px;
+		background:url() center center/auto 100% no-repeat;
+		@media(max-width:768px){
+			height: 300px;
+		}
+	}
+	.public-title{
+		font-size: 18px;
+		color: #000;
+		line-height: 48px;
+		border-bottom: 1px solid #f0f0f0;
+		a{
+			padding-right: 30px;
+			font-size: 12px;
+			color: #f0f0f0;
+		}
+		h3{
+			position: relative;
+			&:after{
+				content:'';
+				position: absolute;
+				bottom: -1px;
+				left: 0;
+				right: 0;
+				border-top: 1px solid #ffbfa8;
+			}
+		}
+	}
+	.product-show{
+		margin-top: 20px;
+		background: #fff;
+		.wrap{
+			padding: 0 20px 20px ;
+		}
+		.item{
+			margin: 20px 0 0 0;
+			padding: 5%;
+			background: #00824a;
+			.pic{
+				img{
+					display: block;
+					width: 100%;
+				}
+			}
+			h3{
+				margin-bottom: 3%;
+				text-align: center;
+				line-height: 40px;
+				font-size: 20px;
+				color: #fff;
+				background: #ffba00;
+				@media(max-width:768px){
+					font-size: 16px;
+					line-height: 30px;
+				}
+			}
+			p{
+				text-align: center;
+				font-size: 16px;
+				color: #fff;
+				line-height: 1.5;
+				@media(max-width:768px){
+					font-size: 12px;
+				}
+			}
+		}
+	}
+	.successful-case{
+		margin-top: 20px;
+		background: #fff;
+		.title{
+			height: 75px;
+			background:url(../img/hico10.png) center center/auto 100% no-repeat;
+		}
+		.item{
+			padding-bottom: 15px;
+			.pic{
+				position: relative;
+				img{
+					display: block;
+					width: 100%;
+				}
+				.date{
+					position: absolute;
+					bottom: 0;
+					left: 50%;
+					max-width: 50px;
+					width: 30%;
+					text-align: center;
+					transform: translate(-50%, 50%);
+					font-size: 22px;
+					color: #d5b480;
+					z-index: 1;
+					&:after{
+						z-index: -1;
+						content:'';
+						position: absolute;
+						width: 100%;
+						padding-top: 100%;
+						left: 0;
+						top: 0;
+						background: #fff;
+						transform: rotate(45deg);
+						border: 1px solid #ecddc6;
+					}
+					small{
+						display: block;
+						font-size: 12px;
+					}
+				}
+			}
+			h3{
+				padding-top: 50px;
+				font-size: 16px;
+				color: #000;
+				text-align: center;
+				padding-bottom: 10px;
+			}
+			p{
+				text-align: center;
+				font-size: 14px;
+				color: #ccc;
+				line-height: 2;
+			}
+		}
+	}
+	.server{
+		margin-top: 20px;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		background: #fff;
+		.book{
+			font-size: 14px;
+			color: #555;
+			line-height: 2;
+			@media(max-width:1200px){
+				padding-bottom: 10px;
+			}
+			img{
+				display: none;
+			}
+			span{
+			}
+			.bg{
+				padding-left: 40%;
+				padding-top: 20px;
+				background:url(../img/hico12.png) left center /35% auto no-repeat;
+			}
+			.ti2em{
+				text-indent: 2em;
+			}
+			.p15-0{
+				padding: 15px 0;
+			}
+		}
+		.df{
+			display: flex;
+			justify-content: space-between;
+			@media(max-width:1200px){
+				flex-direction: column;
+				align-items: center;
+			}
+			>*{
+				flex: 0 0 49%;
+				@media(max-width:1200px){
+					flex: 0 0 30%;
+				}
+				img{
+					display: block;
+					width: 100%;
+					@media(max-width:1200px){
+						width: auto;
+					}
+				}
+			}
+		}
+	}
+	.contact-wechat{
+		margin-top: 20px;
+		font-size: 20px;
+		color: #fff;
+		background: #fff;
+		h3{
+			padding-top: 3%;
+			font-size: 30px;
+			color: #000;
+			line-height: 2;
+			text-align: center;
+			@media(max-width:768px){
+				padding: 20px 0 10px;
+				font-size: 16px;
+			}
+		}
+		img{
+			margin: 0 auto;
+			width: 100%;
+			display: block;
+		}
+	}
+	.mark{
+		padding-bottom: 50px;
+		margin-top: 20px;
+		font-size: 18px;
+		color: #202020;
+		text-align: center;
+		line-height: 1.5;
+		background: #fff;
+		background: linear-gradient(to bottom,#bababa 0%,#bababa 100% ) center 20%/100% 50% no-repeat, linear-gradient(to bottom,#fff 0%,#fff 100% ) center 10%/100% 50% no-repeat; 
+		@media(max-width:768px){
+			font-size: 16px;
+		}
+		figure{
+			img{
+				display: block;
+				width: 100%;
+			}
+		}
+		p{
+			padding: 10px 0;
+		}
+		.left{
+			padding-top: 10%;
+		}
+	}
+	.brand{
+		margin-top: 20px;
+		background: #fff;
+		.col-sm-6{
+			padding-top: 20px;
+			padding-bottom: 20px;
+		}
+		img{
+			padding: 15px 0;
+			display: block;
+			width: 100%;
+		}
+		h3{
+			padding:20px 0 10px;
+			font-size: 18px;
+			color: #085700;
+			text-align: center;
+			line-height: 2;
+		}
+		p{
+			font-size: 14px;
+			color: #444;
+			line-height: 1.5;
+			padding: 10px 0 20px;
+		}
+	}
+	.video{
+		margin-top: 20px;
+		background: #fff;
+		.wrap{
+			margin-left: -2%;
+		}
+		.item{
+			float: left;
+			width: 18%;
+			margin-left: 2%;
+			padding: 20px 0;
+			@media(max-width:992px){
+				width: 48%;
+				&:last-child{
+					display: none;
+				}
+				&:nth-child(2)~.item{
+					padding-top: 0;
+				};
+			}
+			img{
+				display: block;
+				width: 100%;
+			}
+		}
+	}
+	.power{
+		margin-top: 20px;
+		background: #fff;
+		.title{
+			font-size: 30px;
+			color: #000;
+			text-align: center;
+			padding: 20px 0;
+			@media(max-width:768px){
+				font-size: 16px;
+			}
+		}
+		.wrap{
+			margin-left: -2.5%;
+		}
+		.item{
+			margin-left: 2.5%;
+			margin-bottom: 20px;
+			float: left;
+			width: 10%;
+			@media(max-width:1200px){
+				width: 22.5%;
+			}
+			@media(max-width:768px){
+				width: 47.5%;
+			}
+			img{
+				display: block;
+				width: 100%;
+			}
+			p{
+				padding-top: 10px;
+				font-size: 15px;
+				color: #717171;
+				line-height: 1.5;
+			}
+		}
+
+	}
+}
+.footer{
+	margin-top: 20px;
+	background: #f08910;
+	p{
+		padding: 20px 0;
+		font-size: 14px;
+		color: #fff;
+		line-height: 2;
+	}
+}
+
+
+
+/*			.bg{
+				background:url(../img/hico15.png) left top/auto 100% no-repeat;
+				padding-left: 8%;
+				font-size: 16px;
+				color: #fff;
+				line-height: 40px;
+				box-sizing: border-box;
+				p{
+					padding-top: 4%;
+				}
+				}*/
+
+/*
+	.contact-wechat{
+		margin-top: 20px;
+		font-size: 20px;
+		color: #fff;
+		background: #fff;
+		h3{
+			font-size: 30px;
+			color: #000;
+			line-height: 2;
+			text-align: center;
+		}
+		.w100{
+			width: 100%;
+		}
+		.wrap-left,
+		.wrap-right{
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			right: 15px;
+			left: 15px;
+		}
+		.steps1{
+			padding-top: 55px;
+			padding-left: 220px;
+			padding-right: 10px;
+			box-sizing: border-box;
+			padding-top: 73px;
+			padding-left: 240px;
+			padding-right: 20px;
+		}
+		.steps2{
+			padding-top: 130px;
+			padding-left: 20px;
+			padding-right: 220px;
+			box-sizing: border-box;
+			padding-top: 180px;
+			padding-left: 30px;
+			padding-right: 250px;
+			color: #000;
+			
+		}
+		.steps3{
+			padding-left: 220px;
+			padding-top: 60px;
+			padding-right: 20px;
+			box-sizing: border-box;
+			padding-top: 50px;
+			padding-left: 200px;
+			padding-right: 20px;
+		}
+		.steps4{
+			padding-top: 120px;
+			padding-left: 40px;
+			padding-right: 210px;
+			box-sizing: border-box;
+			padding-top: 50px;
+			padding-left: 200px;
+			padding-right: 20px;
+		}
+		}*/
