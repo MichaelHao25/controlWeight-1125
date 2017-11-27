@@ -36,7 +36,7 @@ body{
 			font-size: 18px;
 			color: #f08200;
 			line-height: 2;
-			background:url(../img/hico2.png) left center no-repeat;
+			background:url(../img/impicture-ba02e54c94d10937a65f1aed06e121bc.jpg) left center/60px auto no-repeat;
 			text-transform: uppercase;
 		}
 	}
@@ -60,7 +60,7 @@ body{
 
 .main{
 	.banner{
-		height: 533px;
+		height: 645px;
 		background:url() center center/auto 100% no-repeat;
 		@media(max-width:768px){
 			height: 300px;
@@ -109,7 +109,7 @@ body{
 				text-align: center;
 				line-height: 40px;
 				font-size: 20px;
-				color: #fff;
+				color: #000;
 				background: #ffba00;
 				@media(max-width:768px){
 					font-size: 16px;
@@ -181,7 +181,7 @@ body{
 			p{
 				text-align: center;
 				font-size: 14px;
-				color: #ccc;
+				color: #666;
 				line-height: 2;
 			}
 		}
@@ -313,7 +313,18 @@ body{
 	.video{
 		margin-top: 20px;
 		background: #fff;
+		.item{
+			width: 90%;
+			margin: 0 auto;
+			img{
+				display: block;
+				width: 100%;
+			}
+		}
 		.wrap{
+			padding: 20px 0;
+		}
+/*		.wrap{
 			margin-left: -2%;
 		}
 		.item{
@@ -334,61 +345,77 @@ body{
 				display: block;
 				width: 100%;
 			}
+			}*/
+		}
+		.power{
+			margin-top: 20px;
+			background: #fff;
+			.title{
+				font-size: 30px;
+				color: #000;
+				text-align: center;
+				padding: 20px 0;
+				@media(max-width:768px){
+					font-size: 16px;
+				}
+			}
+			.wrap{
+				margin-left: -2.5%;
+			}
+			.item{
+				margin-left: 2.5%;
+				margin-bottom: 20px;
+				float: left;
+				width: 10%;
+				@media(max-width:1200px){
+					width: 22.5%;
+				}
+				@media(max-width:768px){
+					width: 47.5%;
+				}
+				img{
+					display: block;
+					width: 100%;
+				}
+				p{
+					padding-top: 10px;
+					font-size: 15px;
+					color: #717171;
+					line-height: 1.5;
+				}
+			}
+
 		}
 	}
-	.power{
+	.footer{
 		margin-top: 20px;
-		background: #fff;
-		.title{
-			font-size: 30px;
-			color: #000;
-			text-align: center;
+		background: #f08910;
+		p{
 			padding: 20px 0;
-			@media(max-width:768px){
-				font-size: 16px;
-			}
+			font-size: 14px;
+			color: #fff;
+			line-height: 2;
 		}
-		.wrap{
-			margin-left: -2.5%;
-		}
-		.item{
-			margin-left: 2.5%;
-			margin-bottom: 20px;
-			float: left;
-			width: 10%;
-			@media(max-width:1200px){
-				width: 22.5%;
-			}
-			@media(max-width:768px){
-				width: 47.5%;
-			}
-			img{
-				display: block;
-				width: 100%;
-			}
-			p{
-				padding-top: 10px;
-				font-size: 15px;
-				color: #717171;
-				line-height: 1.5;
-			}
-		}
-
 	}
-}
-.footer{
+
+
+
+.full-scroll{
 	margin-top: 20px;
-	background: #f08910;
-	p{
-		padding: 20px 0;
-		font-size: 14px;
-		color: #fff;
-		line-height: 2;
+	a,img{
+		display: block;
+		width: 100%;
+	}
+	.swiper-pagination{
+		span{
+			opacity: 1;
+			background: #fff;
+			&.swiper-pagination-bullet-active{
+				background: #D30403;
+			}
+		}
 	}
 }
-
-
-
 /*			.bg{
 				background:url(../img/hico15.png) left top/auto 100% no-repeat;
 				padding-left: 8%;
