@@ -26,6 +26,10 @@ body{
 			display: inline-block;
 			vertical-align: middle;
 		}
+		img{
+			max-width: 335px;
+			width: 90%;
+		}
 		.contact-us{
 			padding-left: 70px;
 			text-align: left;
