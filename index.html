@@ -65,7 +65,15 @@
 		</div>
 	</header>
 	<main class="main">
-		<section class="banner" style="background-image: url(img/hico4.png);">
+		<section class="banner" >
+			<div class="swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide"><a href="#" style="background-image: url(img/hico4.png);"></a></div>
+					<div class="swiper-slide"><a href="#" style="background-image: url(img/hico4.png);"></a></div>
+					<div class="swiper-slide"><a href="#" style="background-image: url(img/hico4.png);"></a></div>
+				</div>
+				<div class="swiper-pagination"></div>
+			</div>
 		</section>
 		<section class="container product-show">
 			<div class="row">
@@ -173,27 +181,27 @@
 						<div class="swiper-button-prev swiper-button-white"></div>
 						<div class="swiper-button-next swiper-button-white"></div>
 					</div>
-				<!-- </div> -->
-			</div>
-		</section>
-		<section class="server container">
-			<div class="row">
-				<div class="col-md-6">
-					<div class="left book">
-						<div class="bg ti2em"><img src="img/hico12.png" alt=""><span>为了使客户充份的利用羽悦本草产品,真正吸收羽悦本草产品的精华, 羽悦本草推出独特的售后服务. 我们会针对于每个客户,认真的细致的讲解使用产品中碰到的各种问题,使产品充份的被利用: </span></div>
-						<div class="p15-0">
-							<div>1.认真仔细的讲解. </div>
-							<div>2. 24小时的接收服务. </div>
-							<div>3.时刻督促客户对产品的正确认识</div>
-						</div>
-						<div>后天性大学期间饮食生活不规律，导致肥胖，工作后尝试多次药物减肥，有瘦些身，但产品使用不久后又重新反弹回去。生完孩子后刻苦减肥，偶遇羽悦本草，而后体重下降一发不可收拾。初用一个疗程，瘦身27斤，时别一年，无反弹</div>
-					</div>
+					<!-- </div> -->
 				</div>
-				<div class="col-md-6">
-					<div class="df">
-						<div><img src="img/hico13.png" alt=""></div>
-						<div>
-							<img src="img/hico15.png" alt="">
+			</section>
+			<section class="server container">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="left book">
+							<div class="bg ti2em"><img src="img/hico12.png" alt=""><span>为了使客户充份的利用羽悦本草产品,真正吸收羽悦本草产品的精华, 羽悦本草推出独特的售后服务. 我们会针对于每个客户,认真的细致的讲解使用产品中碰到的各种问题,使产品充份的被利用: </span></div>
+							<div class="p15-0">
+								<div>1.认真仔细的讲解. </div>
+								<div>2. 24小时的接收服务. </div>
+								<div>3.时刻督促客户对产品的正确认识</div>
+							</div>
+							<div>后天性大学期间饮食生活不规律，导致肥胖，工作后尝试多次药物减肥，有瘦些身，但产品使用不久后又重新反弹回去。生完孩子后刻苦减肥，偶遇羽悦本草，而后体重下降一发不可收拾。初用一个疗程，瘦身27斤，时别一年，无反弹</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="df">
+							<div><img src="img/hico13.png" alt=""></div>
+							<div>
+								<img src="img/hico15.png" alt="">
 							<!-- <p>羽悦本草全国总代</p>
 							<p>羽悦本草全牌讲师</p>
 							<p>羽悦本草瘦身达人</p>
@@ -395,7 +403,13 @@
 			autoplayDisableOnInteraction : false,
 			prevButton:'.swiper-button-prev',
 			nextButton:'.swiper-button-next',
-		})     
+		})   
+		var mySwiper = new Swiper ('.banner .swiper-container', {
+			pagination : '.banner .swiper-pagination',
+			autoplay : 3000,
+			loop:true,
+			autoplayDisableOnInteraction : false,
+		})    
 		var media = document.createElement('style')
 		media.innerHTML = ".cp{cursor: pointer;}";
 		document.getElementsByTagName('head')[0].appendChild(media);
